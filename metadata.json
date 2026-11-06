@@ -1,0 +1,9 @@
+{
+  "name": "CCTV-KU",
+  "description": "Smart Local CCTV Monitoring System - Desktop Application Foundation (Tauri 2 & React)",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

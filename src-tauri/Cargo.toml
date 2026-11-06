@@ -1,0 +1,25 @@
+[package]
+name = "cctv-ku"
+version = "1.0.0"
+description = "CCTV-KU: Smart Local CCTV Monitoring System (Windows 10/11 Desktop)"
+authors = ["CCTV-KU Team"]
+edition = "2021"
+
+[lib]
+name = "cctv_ku_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.0.0", features = [] }
+
+[dependencies]
+tauri = { version = "2.0.0", features = [] }
+tauri-plugin-opener = "2.0.0"
+tauri-plugin-shell = "2.0.0"
+tauri-plugin-dialog = "2.0.0"
+tauri-plugin-fs = "2.0.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rusqlite = { version = "0.31", features = ["bundled"] }
+chrono = { version = "0.4", features = ["serde"] }
+sysinfo = "0.30"
